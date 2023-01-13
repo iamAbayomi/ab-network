@@ -39,7 +39,7 @@ const Index = () => {
       toast.success("Order Placed Successfully");
     } else {
       toast.error(
-        ` Order not place becaause you are ${distanceAway} meters away. `
+        ` Order not placed becaause you are ${distanceAway} meters away. `
       );
     }
   }
