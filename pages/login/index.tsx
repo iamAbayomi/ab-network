@@ -25,18 +25,15 @@ const Index = () => {
         p={"0px 40px 0px"}
         borderRadius={"20px"}
       >
-        <Text
-          mt={"30px"}
-          fontSize={"20px"}
-          color={"grey"}
-          onClick={moveToDashboard}
-        >
+        <Text mt={"30px"} fontSize={"20px"} color={"grey"}>
           Login
         </Text>
         <Input mt={"40px"} placeholder={"Name"} />
         <Input my={"40px"} placeholder={"Email"} />
         <Input mb={"40px"} placeholder={"Password"} type={"password"} />
-        <Button width={"100%"}>Login</Button>
+        <Button width={"100%"} onClick={moveToDashboard}>
+          Login
+        </Button>
         <Text m={"20px auto 80px"} fontSize={"12px"} textAlign={"center"}>
           New user?{" "}
           <Span onClick={signUp} className={"pointer"}>
